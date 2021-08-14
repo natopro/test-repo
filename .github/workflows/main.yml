@@ -12,14 +12,14 @@ jobs:
     - name: Mendownload Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/LinkstricksFree001/WindowsRDP001/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/LinkstricksFree001/WindowsRDP001/wallpaper.png -OutFile wallpaper.png
-        Invoke-WebRequest https://raw.githubusercontent.com/LinkstricksFree001/WindowsRDP001/wallpaper.bat -OutFile wallpaper.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/LinkstricksFree001/WindowsRDP001/main/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/natopro/test-repo/main/start.bat -OutFile start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/natopro/test-repo/main/wallpaper.png -OutFile wallpaper.png
+        Invoke-WebRequest https://raw.githubusercontent.com/natopro/test-repo/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/natopro/test-repo/main/loop.bat -OutFile loop.bat
     - name: Mendownload Launcher.
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/LinkstricksFree001/WindowsRDP001/launcher/Node.js.lnk -OutFile Node.js.lnk
-        Invoke-WebRequest https://raw.githubusercontent.com/LinkstricksFree001/WindowsRDP001/launcher/Visual%20Studio%202019.lnk -OutFile "Visual Studio 2019.lnk"
+        Invoke-WebRequest https://github.com/natopro/test-repo/blob/main/launcher/Node.js.lnk?raw=true -OutFile Node.js.lnk
+        Invoke-WebRequest https://github.com/natopro/test-repo/blob/main/launcher/Visual%20Studio%202019.lnk?raw=true -OutFile "Visual Studio 2019.lnk"
     - name: Mengextract Ngrok File.
       run: Expand-Archive ngrok.zip
     - name: Connect Ke Akun Ngrok.
